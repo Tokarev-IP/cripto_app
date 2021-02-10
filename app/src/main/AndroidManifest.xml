@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
+        android:name=".di.App"
+
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -13,10 +15,10 @@
         android:theme="@style/Theme.CriptoApp">
 
         <activity android:name=".activities.AboutActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".activities.MainActivity">
         </activity>
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

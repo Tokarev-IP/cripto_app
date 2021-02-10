@@ -22,13 +22,12 @@ class CurrenciesAdapter : BaseAdapter<CurrenciesAdapter.CurrencyViewHolder>() {
         val mtvCurrencyName = view.findViewById<TextView>(R.id.tvCurrencyName)
         val mtvCurrencyMarketCap = view.findViewById<TextView>(R.id.tvCurrencyMarketCap)
         val mtvCurrencyPrice = view.findViewById<TextView>(R.id.tvCurrencyPrice)
-        val mivCurrencyIcon = view.findViewById<TextView>(R.id.ivCurrencyIcon)
 
         //привязываем элементы представления списка к RecyclerView и заполняем данными
         override fun bind(item: Any) {
             let {
                 item as Currency
-                //Glide.with(view.context).load(item.image).into(view.mivCurrencyIcon)
+                Glide.with(view.context).load(item.image).into(view.findViewById(R.id.ivCurrencyIcon))
                 mtvCurrencySym.text = item.symbol
                 mtvCurrencyName.text = item.name
                 mtvCurrencyMarketCap.text = item.marketCap

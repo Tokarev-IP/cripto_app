@@ -1,11 +1,11 @@
-package test.app.criptoapp
+package test.app.criptoapp.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import test.app.criptoapp.activities.AboutActivity
+import test.app.criptoapp.R
 
 
 class MainActivity : AppCompatActivity() {
